@@ -1,0 +1,290 @@
+/* CSS RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+html,body {
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+    }
+
+/* VARIABLES */
+
+/* NAVIGATION BAR */
+/* #navbar{
+    } */
+#navbar {
+    display: flex;
+    position: sticky;
+    align-items: center;
+
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 82%;
+    width: 100%;
+    z-index: -1;
+    /* opacity: .4; */
+}
+
+/* NAVIGATION BAR : LOGO AND IMAGE */
+#logo {
+    margin: 0px 0px;
+}
+
+#logo img {
+    margin: 24px 30px;
+    height: 50px;
+}
+
+/* NAVIGATION BAR : LIST STYLING */
+#navbar ul {
+    display: flex;
+
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.4rem;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 4px 22px;
+    border-radius: 12px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+/* HOME SECTION  */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 23px 33px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url(../bg.jpg) no-repeat center center / cover;
+    height: 328px;
+    width: 100%;
+
+    z-index: -1;
+    opacity: .89;
+}
+
+#home h1 {
+    color: #dd9b4b;
+    text-align: center;
+    font-size: 25pt;
+    font-family: 'Tapestry', cursive;
+
+}
+
+/* SERVICE SECTION  */
+
+#services {
+    margin: 29px 105px;
+    margin-bottom: 60px;
+    display: flex;
+}
+#services .box {
+    border: 3px solid #b25619;
+    height: 100%;
+    margin: 17px 49px;
+    padding: 29px 31px;
+    border-radius: 17px;
+}
+
+#services .box img {
+    height: 167px;
+    width: 256px;
+    margin: auto;
+    padding: 28px;
+    display: block;
+}
+
+/* CLIENT SECTION  */
+#client-section {
+    height: 43px;
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.client-item img {
+    height: 170px;
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url(../bg1.jpg) no-repeat center center / cover;
+    height: 328px;
+    width: 100%;
+    z-index: -1;
+    opacity: .3;
+}
+
+
+/* Contact us section */
+#contact-box form {
+    width: 80%;
+}
+
+#contact-box label{
+    font-size: 15pt;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 23px;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: .5rem;
+    
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    background: url(https://www.axisbank.com/images/default-source/revamp_new/contact-us/contactus.jpg) no-repeat center center / cover;
+    height: 440px;
+    width: 103%;
+    z-index: -1;
+    opacity: .7;
+}
+
+#contact {
+    margin: 288px -35px;
+    padding: 36px 34px;
+    margin-bottom: 0px;
+    
+}
+footer{
+    background: black;
+    color: white;
+    padding: 12px 13px;
+}
+
+/* UTILITY CLASSES */
+.h1-primary {
+
+    font-size: 34pt;
+    margin: 21px 22px;
+    padding: 15px 31px;
+    /* font-family: 'Ubuntu', sans-serif; */
+
+}
+
+
+.h1-secondary {
+    font-size: 12pt;
+    margin: 16px 22px;
+    padding: 15px 31px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+p {
+    color: white;
+    /* font-family: 'Square Peg', cursive; */
+    font-size: 17pt;
+
+}
+
+.btn {
+    margin: 23px  52px;
+    padding: 7px 9px;
+    /* background-color: #dfb480; */
+    background-color: rgb(78 77 77);
+    border: 2px solid rgb(65, 62, 62);
+    border-radius: 4px;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    box-shadow: -2px -2px #85614f;
+    /* font-style: oblique; */
+
+}
+.btn-2{
+    margin: 23px  52px;
+    padding: 7px 9px;
+    /* background-color: #dfb480; */
+    background-color: rgb(78 77 77);
+    border: 2px solid rgb(65, 62, 62);
+    border-radius: 4px;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    box-shadow: -2px -2px #434140;;
+    /* font-style: oblique; */
+
+}
+
+.container {
+    border: 3px solid rgb(176 170 170);
+    position: sticky;
+    margin: 59px 191px;
+    padding: 30px 52px;
+    width: 12%;
+    height: 255px;
+    border-radius: 13px;
+}
+
+
+.mb-3 {
+    text-align: justify;
+    width: 92px;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    /* resize: none; */
+}
+
+
+.center {
+    text-align: center;
+    font-size: 25pt;
+}
+
+.center-text{
+    text-align: center;
+
+}
